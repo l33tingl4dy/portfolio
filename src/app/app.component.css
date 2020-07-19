@@ -1,7 +1,13 @@
-.social-media-container{
+.social-media-container {
     max-width: 400px;
+    margin: 20px;
 }
-.social{
+
+.social {
     font-size: 35px;
     padding: 3px;
+}
+
+.introduction-container {
+    margin: 20px;
 }
