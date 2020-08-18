@@ -5,9 +5,10 @@
 
 .social {
     font-size: 35px;
-    padding: 3px;
+    padding: 5px;
 }
 
 .introduction-container {
     margin: 20px;
+    text-align: center;
 }

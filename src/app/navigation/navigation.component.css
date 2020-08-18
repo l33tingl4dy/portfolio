@@ -1,3 +1,9 @@
 #page-nav {
-    display: inline;
+    display: inline-block;
+    width: max;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
 }
