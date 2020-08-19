@@ -1,9 +1,14 @@
 #page-nav {
-    display: inline-block;
-    width: max;
     list-style-type: none;
+    text-align-last: right;
+}
+
+li {
+    display: inline;
 }
 
 .nav-link {
     text-decoration: none;
+    padding: 15px;
+    color: black;
 }

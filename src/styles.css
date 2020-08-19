@@ -7,6 +7,5 @@ body {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 92, 92, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ff5c5c", GradientType=1);
     background-repeat: no-repeat;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+    font-family: 'Oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
