@@ -1,14 +1,33 @@
+nav {
+    display: none;
+}
+
+nav.is-active {
+    display: block;
+}
+
+#menuToggle {
+    position: absolute;
+    font-size: 30px;
+    margin: 20px;
+    top: 0;
+    right: 0;
+    border: none;
+    background: none;
+}
+
 #page-nav {
     list-style-type: none;
     text-align-last: right;
-}
-
-li {
-    display: inline;
+    margin-top: 50px;
 }
 
 .nav-link {
     text-decoration: none;
-    padding: 15px;
+    padding: 5px;
     color: black;
+}
+
+.navigation-menu a {
+    display: block;
 }
