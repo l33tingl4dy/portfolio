@@ -1,33 +1,22 @@
-nav {
-    display: none;
-}
-
-nav.is-active {
-    display: block;
-}
-
-#menuToggle {
-    position: absolute;
-    font-size: 30px;
-    margin: 20px;
-    top: 0;
-    right: 0;
-    border: none;
-    background: none;
+.navigation-container {
+    text-align: center;
+    font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 #page-nav {
     list-style-type: none;
-    text-align-last: right;
-    margin-top: 50px;
+    text-align: center;
+    display: inline-flex;
 }
 
 .nav-link {
     text-decoration: none;
-    padding: 5px;
-    color: black;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
 }
 
-.navigation-menu a {
-    display: block;
+a.active {
+    text-decoration: underline;
 }
