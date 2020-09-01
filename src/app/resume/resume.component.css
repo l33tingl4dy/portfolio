@@ -1,10 +1,13 @@
 .resume-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .resume-container ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .resume-header {
@@ -19,4 +22,5 @@
     text-align: center;
     width: 400px;
     font-size: 20px;
+    padding-bottom: 15px;
 }
