@@ -1,7 +1,13 @@
 .resume-container {
     display: flex;
-    justify-content: center;
     margin-bottom: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.small-containers {
+    display: flex;
+    justify-content: center;
 }
 
 .resume-container ul {
@@ -18,9 +24,15 @@
 .section-container {
     background-color: rgba(243, 234, 234, 0.3);
     border-radius: 25px;
-    margin: 50px;
+    margin: 50px 100px 50px 100px;
     text-align: center;
     width: 400px;
     font-size: 20px;
     padding-bottom: 15px;
+}
+
+#work-experience {
+    width: 1000px;
+    justify-content: center;
+    padding: 15px;
 }
