@@ -1,0 +1,32 @@
+.contact-container {
+    text-align: center;
+}
+
+.contact-form {
+    font-size: 20px;
+    max-width: 40%;
+    text-align: left;
+}
+
+label {
+    width: 50%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid salmon;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#message {
+    height: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        max-width: 80%;
+    }
+}
