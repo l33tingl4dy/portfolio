@@ -7,9 +7,7 @@
 
 .contact-form {
     font-size: 20px;
-    max-width: 40%;
-    /* display: inline-block; */
-    text-align: left;
+    /* max-width: 40%; */
     display: flex;
     flex-direction: column;
     flex-flow: column;
@@ -18,10 +16,23 @@
 .input-form {
     position: relative;
     transition: (all 0.3s ease-out);
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-bottom: 20px;
+    ;
 }
 
 label {
-    width: 100%;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 10px;
 }
 
 input[type=text] {
@@ -30,6 +41,17 @@ input[type=text] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+
+.form-control {
+    height: auto;
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, .6)
+}
+
+.form-control:focus label {
+    top: 0;
 }
 
 #message {

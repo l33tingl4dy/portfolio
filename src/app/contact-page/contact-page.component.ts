@@ -10,6 +10,15 @@ export class ContactPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.contactAnimation
+  }
+
+  contactAnimation(){
+    var form = document.getElementsByClassName('contact-form');
+    var inputBox = document.getElementsByClassName('form-control');
+    if(form){
+      
+    }
   }
 
 }
