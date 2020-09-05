@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+.logo {
+    padding: 20px;
+}
+
 .section-container {
     background-color: rgba(243, 234, 234, 0.3);
     border-radius: 25px;

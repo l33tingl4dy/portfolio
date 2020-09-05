@@ -13,11 +13,11 @@ export class ContactPageComponent implements OnInit {
     this.contactAnimation
   }
 
-  contactAnimation(){
+  contactAnimation() {
     var form = document.getElementsByClassName('contact-form');
     var inputBox = document.getElementsByClassName('form-control');
-    if(form){
-      
+    if (form) {
+     
     }
   }
 
