@@ -16,9 +16,8 @@ export class ContactPageComponent implements OnInit {
   contactAnimation() {
     var form = document.getElementsByClassName('contact-form');
     var inputBox = document.getElementsByClassName('form-control');
-    if (form) {
-     
-    }
+   
+
   }
 
 }

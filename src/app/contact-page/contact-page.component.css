@@ -35,7 +35,8 @@ label {
     line-height: 10px;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email] {
     padding: 15px;
     border: 2px solid salmon;
     margin-top: 6px;
