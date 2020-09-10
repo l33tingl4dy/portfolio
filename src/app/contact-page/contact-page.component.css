@@ -65,4 +65,10 @@ input[type=email] {
     border: none;
     margin-bottom: 50px;
     border-radius: 25px;
+    transition: 0.3s;
+}
+
+.submit-contact-form:hover {
+    background-color: teal;
+    color: white;
 }
