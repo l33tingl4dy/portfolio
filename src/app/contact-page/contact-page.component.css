@@ -66,6 +66,7 @@ input[type=email] {
     margin-bottom: 50px;
     border-radius: 25px;
     transition: 0.3s;
+    margin-top: 40px;
 }
 
 .submit-contact-form:hover {
