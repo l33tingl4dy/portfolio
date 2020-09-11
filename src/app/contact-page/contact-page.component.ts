@@ -12,21 +12,13 @@ export class ContactPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  // TODO: Refactor
   validateForm() {
     var nameValidation = document.forms["contactForm"]["fName"].value;
     var emailValidation = document.forms["contactForm"]["email"].value;
     var messageValidation = document.forms["contactForm"]["message"].value;
-    if(nameValidation == ""){
-      alert("Name is required");
-      return false;
-    }
-    if(emailValidation == ""){
-      alert("Email is required");
-      return false;
-    }
-    if(messageValidation == ""){
-      alert("Message is required");
+    if (nameValidation == "" || emailValidation == "" || messageValidation == "") {
+      alert("Field is required");
       return false;
     }
   }
