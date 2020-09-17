@@ -23,4 +23,14 @@ export class ContactPageComponent implements OnInit {
     }
   }
 
+  submitForm(){
+    this.validateForm();
+    var contactForm = document.getElementById('contact-form');
+    var createForm = document.createElement('form');
+    createForm.setAttribute('action', '');
+    createForm.setAttribute('method', 'post');
+    contactForm.appendChild(createForm);
+    
+    // TODO add back end call to send email
+  }
 }
