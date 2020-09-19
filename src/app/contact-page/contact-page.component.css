@@ -73,3 +73,7 @@ input[type=email] {
     background-color: teal;
     color: white;
 }
+
+.validationError {
+    color: red;
+}
