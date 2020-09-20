@@ -12,9 +12,7 @@ export class ContactPageComponent implements OnInit {
   contact = {name: '', email: '', message: ''};
   contactForm: FormGroup;
 
-  public nameMissing = false;
-  public emailMissing = false;
-  public messageMissing = false;
+  public isSubmitted = false;
   ngOnInit(): void {
     this.contactForm = new FormGroup({
       name: new FormControl(this.contact.name, [Validators.required]),
@@ -26,34 +24,19 @@ export class ContactPageComponent implements OnInit {
     });
   }
 
-  public validateForm() {
-    // const nameValidation = this.contactForm.name.value;
-    // const emailValidation = document.forms.contactForm.email.value;
-    // const messageValidation = document.forms.contactForm.message.value;
-    // if (nameValidation === ''){
-    //   this.nameMissing = true;
-    // }
-    // if (emailValidation === ''){
-    //   this.emailMissing = true;
-    // }
-    // if (messageValidation === ''){
-    //   this.messageMissing = true;
-    // }
+  get name() { return this.contactForm.get('name');}
+  get email() {return this.contactForm.get('email');}
+  get message() {return this.contactForm.get('message');}
 
-    // TODO: remove when above is working
-    // if (nameValidation == "" || emailValidation == "" || messageValidation == "") {
-    //   alert("Field is required");
-    //   return false;
-    // }
-  }
 
-  submitForm(){
-    this.validateForm();
-    const contactForm = document.getElementById('contact-form');
-    const createForm = document.createElement('form');
-    createForm.setAttribute('action', '');
-    createForm.setAttribute('method', 'post');
-    contactForm.appendChild(createForm);
+  public submitForm(){
+   this.isSubmitted = true;
+ 
+    // const contactForm = document.getElementById('contact-form');
+    // const createForm = document.createElement('form');
+    // createForm.setAttribute('action', '');
+    // createForm.setAttribute('method', 'post');
+    // contactForm.appendChild(createForm);
 
     // TODO add back end call to send email
   }
