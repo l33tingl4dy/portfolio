@@ -9,7 +9,7 @@
                 <input type="email" id="email" name="emailAddress" class="form-control" formControlName="email" autocomplete="email" required>
                 <label for="message">Message<span *ngIf="message.errors?.required && isSubmitted" class="validationError">Message is required</span></label>
                 <input type="text" id="message" name="messageText" class="form-control" formControlName="message" required>
-                <button class="submit-contact-form" type="submit" value="submit" [disabled]="!contactForm.valid">Submit</button>
+                <button class="submit-contact-form" type="submit" value="submit">Submit</button>
             </div>
         </form>
     </section>

@@ -29,16 +29,13 @@ export class ContactPageComponent implements OnInit {
     });
   }
 
-  get name() { return this.contactForm.get('name'); }
-  get email() {return this.contactForm.get('email'); }
-  get message() {return this.contactForm.get('message'); }
-
-
+  // todo: set focus for accessibility on error messages/validation
+  
   public submitForm(FormData){
-    if (this.contactForm.errors == null){
-      // submit button was clicked
-      this.isSubmitted = true;
-
+    // submit button was clicked
+    this.isSubmitted = true;
+    if (this.contactForm.valid){
+      
       console.log(FormData);
       // send email
       this.contact.PostMessage(FormData).subscribe(response => {
@@ -51,4 +48,8 @@ export class ContactPageComponent implements OnInit {
       });
     }
   }
+
+  get name() { return this.contactForm.get('name'); }
+  get email() {return this.contactForm.get('email'); }
+  get message() {return this.contactForm.get('message'); }
 }
