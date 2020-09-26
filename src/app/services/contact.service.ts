@@ -6,7 +6,8 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ContactService {
-  private api = 'https://mailthis.to/alece.fwb@gmail.com'
+  // TODO: get alias when mailthis.to works
+  private api = 'https://mailthis.to/alece.fwb@gmail.com';
   constructor(private http: HttpClient) { }
 
   PostMessage(input: any) {
@@ -21,7 +22,7 @@ export class ContactService {
           return error;
         }
       )
-    )
+    );
   }
 }
 

@@ -35,17 +35,18 @@ export class ContactPageComponent implements OnInit {
 
 
   public submitForm(FormData){
-    if(!this.contactForm.errors){
+    if (this.contactForm.errors == null){
       // submit button was clicked
       this.isSubmitted = true;
-      
+
       console.log(FormData);
       // send email
       this.contact.PostMessage(FormData).subscribe(response => {
+        // TODO: change this confirmation page
         location.href = 'https://mailthis.to/confirm';
         console.log(response);
       }, error => {
-        console.warn(error.responseText)
+        console.warn(error.responseText);
         console.log({ error });
       });
     }
