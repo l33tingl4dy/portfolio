@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from '../services/contact.service';
 
 @Component({
   selector: 'app-contact-page',
@@ -8,36 +9,45 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactPageComponent implements OnInit {
 
-  constructor() { }
-  contact = {name: '', email: '', message: ''};
+  FormData: FormGroup;
+  constructor(
+    private builder: FormBuilder,
+    private contact: ContactService
+  ) { }
+  contactObject = {name: '', email: '', message: ''};
   contactForm: FormGroup;
 
   public isSubmitted = false;
   ngOnInit(): void {
-    this.contactForm = new FormGroup({
-      name: new FormControl(this.contact.name, [Validators.required]),
-      email: new FormControl(this.contact.email, [Validators.required]),
-      message: new FormControl(this.contact.message, [
+    this.contactForm = this.builder.group({
+      name: new FormControl(this.contactObject.name, [Validators.required]),
+      email: new FormControl(this.contactObject.email, [Validators.required]),
+      message: new FormControl(this.contactObject.message, [
         Validators.required,
         Validators.minLength(10)
       ])
     });
   }
 
-  get name() { return this.contactForm.get('name');}
-  get email() {return this.contactForm.get('email');}
-  get message() {return this.contactForm.get('message');}
+  get name() { return this.contactForm.get('name'); }
+  get email() {return this.contactForm.get('email'); }
+  get message() {return this.contactForm.get('message'); }
 
 
-  public submitForm(){
-   this.isSubmitted = true;
- 
-    // const contactForm = document.getElementById('contact-form');
-    // const createForm = document.createElement('form');
-    // createForm.setAttribute('action', '');
-    // createForm.setAttribute('method', 'post');
-    // contactForm.appendChild(createForm);
-
-    // TODO add back end call to send email
+  public submitForm(FormData){
+    if(!this.contactForm.errors){
+      // submit button was clicked
+      this.isSubmitted = true;
+      
+      console.log(FormData);
+      // send email
+      this.contact.PostMessage(FormData).subscribe(response => {
+        location.href = 'https://mailthis.to/confirm';
+        console.log(response);
+      }, error => {
+        console.warn(error.responseText)
+        console.log({ error });
+      });
+    }
   }
 }

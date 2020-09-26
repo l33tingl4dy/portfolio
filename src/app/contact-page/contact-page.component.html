@@ -1,7 +1,7 @@
 <div class="contact-container">
     <h1>Say Hi!</h1>
     <section class="contact-section">
-        <form [formGroup]="contactForm" class="contact-form" name="contactForm" id="contact-form">
+        <form [formGroup]="contactForm" class="contact-form" name="contactForm" id="contact-form" (ngSubmit)="submitForm(contactForm.value)">
             <div class="input-form name-form">
                 <label for="fName">Name<span *ngIf="name.errors?.required && isSubmitted" class="validationError">Name is required</span></label>
                 <input type="text" id="fName" name="fullName" class="form-control" formControlName="name" autocomplete="name" required>
@@ -9,7 +9,7 @@
                 <input type="email" id="email" name="emailAddress" class="form-control" formControlName="email" autocomplete="email" required>
                 <label for="message">Message<span *ngIf="message.errors?.required && isSubmitted" class="validationError">Message is required</span></label>
                 <input type="text" id="message" name="messageText" class="form-control" formControlName="message" required>
-                <button class="submit-contact-form" type="submit" value="submit" (click)="submitForm();">Submit</button>
+                <button class="submit-contact-form" type="submit" value="submit" [disabled]="!contactForm.valid">Submit</button>
             </div>
         </form>
     </section>
