@@ -9,6 +9,17 @@
     text-align: center;
 }
 
+.contact-submitted {
+    padding: 0 40px;
+    background-color: rgba(243, 234, 234, 0.3);
+    border-radius: 25px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
 .contact-form {
     font-size: 20px;
     display: flex;

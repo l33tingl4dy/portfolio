@@ -1,4 +1,5 @@
-<div class="contact-container">
+>
+<div *ngIf="contactFormShown; else submitted" class="contact-container">
     <h1>Say Hi!</h1>
     <section class="contact-section">
         <form [formGroup]="contactForm" class="contact-form" name="contactForm" id="contact-form" (ngSubmit)="submitForm(contactForm.value)">
@@ -15,4 +16,11 @@
     </section>
 </div>
 
+
 <!-- TODO: Create alternate div for after submission-->
+<ng-template #submitted>
+    <div class="contact-submitted">
+
+        <h1>Thank you for contacting me! Your response has been submitted.</h1>
+    </div>
+</ng-template>
