@@ -31,7 +31,7 @@ export class ContactPageComponent implements OnInit {
   }
 
   // todo: set focus for accessibility on error messages/validation
-  
+
   public submitForm(FormData){
     // submit button was clicked
     this.isSubmitted = true;
