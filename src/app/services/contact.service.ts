@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ContactService {
-  // TODO: get alias when mailthis.to works --also testing with alternate email to not use up free emails from MailThis
+  // TODO: redo thos now that mailthis is no longer supported
   private api = 'https://mailthis.to/harris.amandajo@gmail.com';
   constructor(private http: HttpClient) { }
 
