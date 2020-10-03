@@ -14,3 +14,9 @@
     width: 100%;
     text-align: center;
 }
+
+.runningPhoto {
+    float: right;
+    /* transform: rotate(.02turn); */
+    border-radius: 25px;
+}
