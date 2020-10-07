@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { EmailValidator, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from '../services/contact.service';
 
 @Component({
@@ -36,15 +36,18 @@ export class ContactPageComponent implements OnInit {
     // submit button was clicked
     this.isSubmitted = true;
     if (this.contactForm.valid){
-      this.contactFormShown = false;
-      console.log(FormData);
-      // send email
-      this.contact.PostMessage(FormData).subscribe(response => {
-        console.log(response);
-      }, error => {
-        console.warn(error.responseText);
-        console.log({ error });
-      });
+      // this.contactFormShown = false;
+      // Email.send({
+      //   Host : "smtp.mailtrap.io",
+      //   SecureToken: ""
+      // })
+      // // send email
+      // this.contact.PostMessage(FormData).subscribe(response => {
+      //   console.log(response);
+      // }, error => {
+      //   console.warn(error.responseText);
+      //   console.log({ error });
+      // });
     }
   }
 
