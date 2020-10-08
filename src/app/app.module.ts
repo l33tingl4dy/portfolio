@@ -10,7 +10,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ContactService } from './services/contact.service';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +30,6 @@ import { ContactService } from './services/contact.service';
     HttpClientModule
   ],
   providers: [
-    ContactService
   ],
   bootstrap: [AppComponent]
 })
