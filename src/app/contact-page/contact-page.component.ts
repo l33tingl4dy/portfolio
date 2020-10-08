@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { ContactService } from '../services/contact.service';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
@@ -13,7 +12,6 @@ export class ContactPageComponent implements OnInit {
   FormData: FormGroup;
   constructor(
     private builder: FormBuilder,
-    private contact: ContactService
   ) { }
   contactObject = { name: '', email: '', message: '' };
   contactForm: FormGroup;
