@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 export class ContactService {
     // TODO: redo thos now that mailthis is no longer supported
 
-    //todo fix this
+    // todo fix this
     // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     // private api = 'https://mailthis.to/harris.amandajo@gmail.com';
     // constructor(private http: HttpClient) {}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { EmailValidator, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from '../services/contact.service';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
   selector: 'app-contact-page',
@@ -14,9 +15,8 @@ export class ContactPageComponent implements OnInit {
     private builder: FormBuilder,
     private contact: ContactService
   ) { }
-  contactObject = {name: '', email: '', message: ''};
+  contactObject = { name: '', email: '', message: '' };
   contactForm: FormGroup;
-
   public isSubmitted = false;
   public contactFormShown = true;
   ngOnInit(): void {
@@ -32,26 +32,23 @@ export class ContactPageComponent implements OnInit {
 
   // todo: set focus for accessibility on error messages/validation
 
-  public submitForm(FormData){
+  public submitForm(e: Event) {
     // submit button was clicked
     this.isSubmitted = true;
-    if (this.contactForm.valid){
-      // this.contactFormShown = false;
-      // Email.send({
-      //   Host : "smtp.mailtrap.io",
-      //   SecureToken: ""
-      // })
-      // // send email
-      // this.contact.PostMessage(FormData).subscribe(response => {
-      //   console.log(response);
-      // }, error => {
-      //   console.warn(error.responseText);
-      //   console.log({ error });
-      // });
+    // form validation
+    if (this.contactForm.valid) {
+      this.contactFormShown = false;
+      e.preventDefault();
+      emailjs.sendForm('service_8rp4gb8', 'template_0gq4c4r', e.target as HTMLFormElement, 'user_IdUf5NOW1pW3PPrnobeLF')
+        .then((result: EmailJSResponseStatus) => {
+          console.log(result.status, result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
     }
   }
 
   get name() { return this.contactForm.get('name'); }
-  get email() {return this.contactForm.get('email'); }
-  get message() {return this.contactForm.get('message'); }
+  get email() { return this.contactForm.get('email'); }
+  get message() { return this.contactForm.get('message'); }
 }
