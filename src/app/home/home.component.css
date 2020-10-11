@@ -38,5 +38,28 @@ a {
     color: black;
 }
 
+@media only screen and (max-width: 1200px) {
+    .home-container {
+        width: 90%;
+        margin: 10px;
+    }
+}
 
-/* TODO: add media query  */
+@media only screen and (max-width: 700px) {
+    .home-container {
+        width: 90%;
+        display: block;
+        margin: 5px;
+    }
+    #home-photo {
+        align-items: center;
+        justify-content: center;
+    }
+    .photo-container {
+        justify-content: center;
+        display: flex;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
