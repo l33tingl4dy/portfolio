@@ -1,47 +1,63 @@
-.resume-container {
-    display: flex;
-    margin-bottom: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.small-containers {
-    display: flex;
-    justify-content: center;
-}
-
-.resume-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.resume-header {
-    width: 100%;
-    text-align: center;
-}
-
-.logo {
-    padding: 20px;
-}
-
-.skills-container {
-    width: 100%;
-    text-align: center;
-}
-
-.section-container {
-    background-color: rgba(243, 234, 234, 0.3);
-    border-radius: 25px;
-    margin: 50px 100px 50px 100px;
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 15px;
-}
-
-#work-experience {
-    width: 1000px;
-    justify-content: center;
-    padding: 15px;
-    display: block;
-}
+    .resume-container {
+        display: flex;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .small-containers {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .resume-container ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .resume-header {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .logo {
+        padding: 20px;
+    }
+    
+    .skills-container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section-container {
+        background-color: rgba(243, 234, 234, 0.3);
+        border-radius: 25px;
+        margin: 50px 100px 50px 100px;
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    
+    #work-experience {
+        width: 1000px;
+        justify-content: center;
+        padding: 15px;
+        display: block;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .resume-container {
+            width: 100%;
+            margin: 0px;
+            padding: 30px;
+            border-radius: 0;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .resume-container {
+            width: 90%;
+            margin: 0 60px;
+        }
+    }

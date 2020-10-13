@@ -46,7 +46,7 @@ input[type=email] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    width: 40%;
+    /* width: 40%; */
 }
 
 .form-control {
@@ -58,21 +58,40 @@ input[type=email] {
     height: 150px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1000px) {
+    input {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .contact-container {
-        width: 100%;
+        width: 90%;
+        margin: 0 60px;
     }
     .contact-form {
-        width: 80%;
+        width: 100%;
     }
     .input-form {
         width: 100%;
     }
     input {
-        width: 100%;
+        width: 80%;
     }
     section.contact-section {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        width: 100%;
+        margin: 0px;
+        padding: 30px;
+        border-radius: 0;
+    }
+    input {
+        width: 90%;
     }
 }
 
