@@ -8,6 +8,13 @@ body {
     font-family: 'Oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+@font-face {
+    font-family: 'Oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    src: local('Trebuchet MS'), url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap), url(https://fonts.googleapis.com/css?family=Oswald&display=swap);
+    font-display: swap;
+}
+
 footer {
     position: fixed;
     bottom: 0;
