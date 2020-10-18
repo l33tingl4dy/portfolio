@@ -8,11 +8,11 @@ import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
   // TODO: Add rerouting to home page when unknown path is entered
-  { path: '', redirectTo: 'home-component', pathMatch: 'full'},
-  { path: 'home-component', component: HomeComponent },
-  { path: 'cv-component', component: ResumeComponent},
-  { path: 'about-component', component: AboutPageComponent },
-  { path: 'contact-component', component: ContactPageComponent }
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent },
+  { path: 'cv', component: ResumeComponent},
+  { path: 'about', component: AboutPageComponent },
+  { path: 'contact', component: ContactPageComponent }
 ];
 
 @NgModule({
