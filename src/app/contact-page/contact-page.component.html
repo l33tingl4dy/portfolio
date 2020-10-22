@@ -11,7 +11,7 @@
                 <input type="text" id="fName" name="fullName" class="form-control" formControlName="name" autocomplete="name" required>
                 <label for="email">Email<span *ngIf="email.errors?.required && isSubmitted" class="validationError">Email is required</span></label>
                 <input type="email" id="email" name="user_emailAddress" class="form-control" formControlName="email" autocomplete="email" required>
-                <label for="message">Message<span *ngIf="message.errors?.required && isSubmitted" class="validationError">Message is required</span></label>
+                <label for="message">Message<span *ngIf="message.errors && isSubmitted" class="validationError">Message must be more than 10 characters</span></label>
                 <input type="text" id="message" name="messageText" class="form-control" formControlName="message" required>
                 <button class="submit-contact-form" type="submit" value="submit">Submit</button>
             </div>
