@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: '404', component: NotfoundComponent },
-  { path: '***', redirectTo: '/404'}
+  { path: '**', redirectTo: '404'}
 ];
 
 @NgModule({

@@ -1,0 +1,39 @@
+.not-found-container {
+    padding: 30px;
+    display: block;
+    /* justify-content: center; */
+    background-color: rgba(243, 234, 234, 0.3);
+    border-radius: 25px;
+    margin: 50px 200px;
+    font-size: 30px;
+}
+
+.not-found-header,
+.flavor-text {
+    width: 100%;
+    text-align: center;
+}
+
+.photo-container {
+    justify-content: center;
+}
+
+#lost-photo {
+    max-width: 450px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .not-found-container {
+        margin: 0px;
+        padding: 20px;
+        border-radius: 0;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .not-found-container {
+        margin: 0;
+    }
+}
