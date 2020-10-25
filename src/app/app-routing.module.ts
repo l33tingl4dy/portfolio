@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ResumeComponent } from './resume/resume.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'cv', component: ResumeComponent},
   { path: 'about', component: AboutPageComponent },
-  { path: 'contact', component: ContactPageComponent }
+  { path: 'contact', component: ContactPageComponent },
+  { path: '404', component: NotfoundComponent },
+  { path: '***', redirectTo: '/404'}
 ];
 
 @NgModule({
