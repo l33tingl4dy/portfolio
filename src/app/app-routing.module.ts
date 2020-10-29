@@ -5,6 +5,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ResumeComponent } from './resume/resume.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { KnittingComponent } from './knitting/knitting.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'cv', component: ResumeComponent},
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
+  {path: 'knitting', component: KnittingComponent}
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '404'}
 ];
