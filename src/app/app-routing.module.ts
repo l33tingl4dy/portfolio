@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'cv', component: ResumeComponent},
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
-  {path: 'knitting', component: KnittingComponent}
+  {path: 'knitting', component: KnittingComponent},
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '404'}
 ];
