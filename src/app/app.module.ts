@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { KnittingComponentComponent } from './knitting-component/knitting-component.component';
+import { KnittingComponent } from './knitting/knitting.component';
 
 
 @NgModule({
@@ -22,7 +22,7 @@ import { KnittingComponentComponent } from './knitting-component/knitting-compon
     HomeComponent,
     ResumeComponent,
     NotfoundComponent,
-    KnittingComponentComponent
+    KnittingComponent
   ],
   imports: [
     BrowserModule,
