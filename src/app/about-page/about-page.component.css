@@ -22,7 +22,6 @@
     
     @media screen and (max-width: 600px) {
         .about-container {
-            width: 100%;
             margin: 0px;
             padding: 30px;
             border-radius: 0;
@@ -31,7 +30,6 @@
     
     @media screen and (max-width: 1000px) {
         .about-container {
-            width: 90%;
             margin: 0 60px;
         }
     }
