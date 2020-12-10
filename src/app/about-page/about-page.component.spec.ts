@@ -22,4 +22,6 @@ describe('AboutPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // TODO: test math on running streak
 });
