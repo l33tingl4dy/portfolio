@@ -27,4 +27,20 @@ describe('ContactPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+ 
+  it('should be invalid if fields are empty', ()=> {
+
+  });
+  //TODO: Check name
+
+  // TODO: Check email
+
+  // TODO: Check message
+
+
+  // check all
+  it('should send email if fields are valid', ()=> {
+
+  });
 });
