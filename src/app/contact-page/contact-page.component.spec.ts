@@ -37,12 +37,6 @@ describe('ContactPageComponent', () => {
     component.message.setValue('');
     expect(component.contactForm.valid).toBeFalse();
   });
-  //TODO: Check name
-
-  // TODO: Check email
-
-  // TODO: Check message
-
 
   // check all
   it('should send email if fields are valid', () => {
@@ -52,5 +46,4 @@ describe('ContactPageComponent', () => {
     expect(component.contactForm.valid).toBeTrue();
   });
 
-  // TODO: test email functionality
 });
