@@ -13,18 +13,36 @@ describe('ContactPageComponent', () => {
         ReactiveFormsModule,
         FormsModule
       ],
-      declarations: [ ContactPageComponent ]
+      declarations: [ContactPageComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ContactPageComponent);
     component = fixture.componentInstance;
+    component.ngOnInit();
     fixture.detectChanges();
+
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('should be invalid if fields are empty', () => {
+    component.name.setValue('');
+    component.email.setValue('');
+    component.message.setValue('');
+    expect(component.contactForm.valid).toBeFalse();
+  });
+
+  it('should send email if fields are valid', () => {
+    component.name.setValue('Leia Organa');
+    component.email.setValue('princess.general@alderaan.com');
+    component.message.setValue("You're my only hope");
+    expect(component.contactForm.valid).toBeTrue();
+  });
+
 });
