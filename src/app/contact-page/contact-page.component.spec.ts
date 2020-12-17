@@ -38,7 +38,6 @@ describe('ContactPageComponent', () => {
     expect(component.contactForm.valid).toBeFalse();
   });
 
-  // check all
   it('should send email if fields are valid', () => {
     component.name.setValue('Leia Organa');
     component.email.setValue('princess.general@alderaan.com');
