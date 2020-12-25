@@ -4,34 +4,18 @@
     <h2>Books</h2>
     <!-- TODO: Books-->
     <h3>Non-Fiction</h3>
-    <ul>
-        <li>HTML and CSS & Javascript and Jquery</li>
-        <li>Let's Pretend This Never Happened</li>
-        <li>Furiously Happy</li>
-    </ul>
+    <div *ngFor="let nonfiction of nonFictionBooks" class="recSection">
+        {{ nonfiction.name }} | {{ nonfiction.author }}
+    </div>
     <h3>Fiction</h3>
-    <ul>
-        <li>The Girl With All The Gifts</li>
-        <li>Scythe Series</li>
-        <li>We Were Liars</li>
-        <li>Ready Player One</li>
-        <li>They Both Die at the End</li>
-        <li>The Handmaid's Tale</li>
-    </ul>
+    <div *ngFor="let fiction of fictionBooks" class="recSection">
+        {{ fiction.name }} | {{ fiction.author }}
+    </div>
 </div>
 
 <div class="recommendation-section">
     <h2>Games</h2>
     <!-- TODO: Games-->
-    <ul>
-        <li>Bioshock Series</li>
-        <li>What Remains of Edith Finch</li>
-        <li>Untitled Goose Game</li>
-        <li>Tell Me Why</li>
-        <li>Portal</li>
-        <li>Cradle</li>
-        <li>Life is Strange</li>
-        <li>Undertale</li>
-        <li>Layers of Fear</li>
-    </ul>
-</div>
+    <div *ngFor="let game of games" class="recSection">
+        {{game.name}}
+    </div>
