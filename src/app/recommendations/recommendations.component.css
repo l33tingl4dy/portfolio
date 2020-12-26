@@ -7,14 +7,22 @@
     margin: 50px 200px;
     flex-wrap: wrap;
     font-size: 18px;
+    flex-flow: column;
+    text-align: center;
+}
+
+.recHeader {
+    flex-flow: column;
+    text-align: center;
 }
 
 h1 h2 h3 {
     width: 100%;
     display: flex;
+    position: relative;
+    text-align: center;
 }
 
 .recSection {
-    display: flex;
-    flex: auto;
+    /* TODO: make cards with image and links */
 }
