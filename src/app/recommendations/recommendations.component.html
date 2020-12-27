@@ -4,17 +4,23 @@
     <h2>Books</h2>
     <h3>Non-Fiction</h3>
     <div *ngFor="let nonfiction of nonFictionBooks" class="recSection">
-        {{ nonfiction.name }} | {{ nonfiction.author }}
+        <span>
+            {{ nonfiction.name }} | {{ nonfiction.author }}
+        </span>
     </div>
     <h3>Fiction</h3>
     <!-- TODO: Add dynamic id-->
     <div *ngFor="let fiction of fictionBooks" class="recSection" id="bookInfo">
-        {{ fiction.name }} | {{ fiction.author }}
+        <span class="recCard">
+            {{ fiction.name }} | {{ fiction.author }}
+        </span>
     </div>
 </div>
 
 <div class="recommendation-section">
     <h2>Games</h2>
     <div *ngFor="let game of games" class="recSection">
-        {{game.name}}
+        <span class="recCard">
+{{game.name}}
+        </span>
     </div>
