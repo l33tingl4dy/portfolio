@@ -27,4 +27,8 @@ h1 h2 h3 {
     /* TODO: make cards with image and links */
     background-color: rgba(0, 0, 0, 0.3);
     /* max-width: 200px; */
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    /* border-radius: 25px; */
 }
