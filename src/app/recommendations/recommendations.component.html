@@ -5,6 +5,7 @@
     <h3>Non-Fiction</h3>
     <div *ngFor="let nonfiction of nonFictionBooks" class="recSection">
         <span>
+            <img src="{{nonfiction.imgLink}}" height=150px;>
             {{ nonfiction.name }} | {{ nonfiction.author }}
         </span>
     </div>
@@ -12,6 +13,7 @@
     <!-- TODO: Add dynamic id-->
     <div *ngFor="let fiction of fictionBooks" class="recSection" id="bookInfo">
         <span class="recCard">
+            <img src="{{fiction.imgLink}}" height=150px;>
             {{ fiction.name }} | {{ fiction.author }}
         </span>
     </div>
