@@ -5,7 +5,7 @@
     <h3>Non-Fiction</h3>
     <div *ngFor="let nonfiction of nonFictionBooks" class="recSection">
         <span>
-            <img src="{{nonfiction.imgLink}}" height=150px;>
+           <a href="{{nonfiction.amazon}}"></a> <img src="{{nonfiction.imgLink}}" height=150px;>
             {{ nonfiction.name }} | {{ nonfiction.author }}
         </span>
     </div>
@@ -13,7 +13,7 @@
     <!-- TODO: Add dynamic id-->
     <div *ngFor="let fiction of fictionBooks" class="recSection" id="bookInfo">
         <span class="recCard">
-            <img src="{{fiction.imgLink}}" height=150px;>
+           <a href="{{fiction.amazon}}"></a> <img src="{{fiction.imgLink}}" height=150px;>
             {{ fiction.name }} | {{ fiction.author }}
         </span>
     </div>
@@ -23,7 +23,7 @@
     <h2>Games</h2>
     <div *ngFor="let game of games" class="recSection">
         <span class="recCard">
-            <img src="{{game.img}}" height=100px;>
+            <a href="{{game.steam}}"></a><img src="{{game.img}}" height=100px;>
 {{game.name}}
         </span>
     </div>
