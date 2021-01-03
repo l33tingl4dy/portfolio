@@ -3,27 +3,33 @@
     <!-- TODO: Add images and links-->
     <h2>Books</h2>
     <h3>Non-Fiction</h3>
-    <div *ngFor="let nonfiction of nonFictionBooks" class="recSection">
-        <span>
-           <a href="{{nonfiction.amazon}}"></a> <img src="{{nonfiction.imgLink}}" height=150px;>
-            {{ nonfiction.name }} | {{ nonfiction.author }}
-        </span>
+    <div class="recSection">
+        <div *ngFor="let nonfiction of nonFictionBooks" class="recObject">
+            <span>
+                <a href="{{nonfiction.amazon}}" target="_blank" rel="noreferrer"><img src="{{nonfiction.imgLink}}" height=150px;></a>
+                {{ nonfiction.name }} | {{ nonfiction.author }}
+            </span>
+        </div>
     </div>
     <h3>Fiction</h3>
     <!-- TODO: Add dynamic id-->
-    <div *ngFor="let fiction of fictionBooks" class="recSection" id="bookInfo">
-        <span class="recCard">
-           <a href="{{fiction.amazon}}"></a> <img src="{{fiction.imgLink}}" height=150px;>
+    <div class="recSection">
+        <div *ngFor="let fiction of fictionBooks" class="recObject" id="bookInfo">
+            <span class="recCard">
+           <a href="{{fiction.amazon}}" target="_blank" rel="noreferrer"><img src="{{fiction.imgLink}}" height=150px;></a>
             {{ fiction.name }} | {{ fiction.author }}
         </span>
+        </div>
     </div>
 </div>
 
 <div class="recommendation-section">
     <h2>Games</h2>
-    <div *ngFor="let game of games" class="recSection">
-        <span class="recCard">
-            <a href="{{game.steam}}"></a><img src="{{game.img}}" height=100px;>
+    <div class="recSection">
+        <div *ngFor="let game of games" class="recObject">
+            <span class="recCard">
+            <a href="{{game.steam}}" target="_blank" rel="noreferrer"><img src="{{game.img}}" height=100px;></a>
 {{game.name}}
         </span>
+        </div>
     </div>
