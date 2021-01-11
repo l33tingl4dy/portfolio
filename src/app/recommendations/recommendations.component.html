@@ -4,9 +4,9 @@
     <h2>Books</h2>
     <h3>Non-Fiction</h3>
     <div class="recSection">
-        <div *ngFor="let nonfiction of nonFictionBooks" class="recObject">
+        <div *ngFor="let nonfiction of nonFictionBooks, index as i" class="recObject">
             <span>
-                <a href="{{nonfiction.amazon}}" target="_blank" rel="noreferrer" aria-labelledby="nonfiction-{{i}}"><img src="{{nonfiction.imgLink}}" height=150px;></a>
+                <a href="{{nonfiction.amazon}}" target="_blank" rel="noreferrer" attr.aria-labelledby="nonfiction-{{i}}"><img src="{{nonfiction.imgLink}}" height=150px;></a>
                 <span id="nonFiction-{{i}}">{{ nonfiction.name }} | {{ nonfiction.author }}</span>
             </span>
         </div>
@@ -14,9 +14,9 @@
     <h3>Fiction</h3>
     <!-- TODO: Add dynamic id-->
     <div class="recSection">
-        <div *ngFor="let fiction of fictionBooks" class="recObject" id="bookInfo">
+        <div *ngFor="let fiction of fictionBooks, index as i;" class="recObject" id="bookInfo">
             <span class="recCard">
-           <a href="{{fiction.amazon}}" target="_blank" rel="noreferrer" aria-labelledby="fiction-{{i}}"><img src="{{fiction.imgLink}}" height=150px;></a>
+           <a href="{{fiction.amazon}}" target="_blank" rel="noreferrer" attr.aria-labelledby="fiction-{{i}}"><img src="{{fiction.imgLink}}" height=150px;></a>
             <span id="fiction-{{i}}">{{ fiction.name }} | {{ fiction.author }}</span>
             </span>
         </div>
@@ -26,9 +26,9 @@
 <div class="recommendation-section">
     <h2>Games</h2>
     <div class="recSection">
-        <div *ngFor="let game of games" class="recObject">
+        <div *ngFor="let game of games, index as i" class="recObject">
             <span class="recCard">
-            <a href="{{game.steam}}" target="_blank" rel="noreferrer" aria-labelledby="game-{{i}}"><img src="{{game.img}}" height=100px;></a>
+            <a href="{{game.steam}}" target="_blank" rel="noreferrer" attr.aria-labelledby="game-{{i}}"><img src="{{game.img}}" height=100px;></a>
                 <span id="game-{{i}}">{{game.name}}</span>
             </span>
         </div>
