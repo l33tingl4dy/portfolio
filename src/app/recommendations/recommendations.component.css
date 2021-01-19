@@ -24,12 +24,15 @@ h1 h2 h3 {
 }
 
 .recObject {
-    /* TODO: make cards with image and links */
     background-color: rgba(0, 0, 0, 0.3);
     width: 300px;
     display: block;
     padding: 20px;
     margin: 20px;
+}
+
+.recObject:hover {
+    background-color: rgba(243, 234, 234, 0.4);
 }
 
 
@@ -49,6 +52,8 @@ a:visited {
     flex: content;
     flex-wrap: wrap;
     justify-content: center;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
 }
 
 .recData {
