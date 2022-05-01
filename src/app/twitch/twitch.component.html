@@ -1,0 +1,47 @@
+<div id="twitchPage">
+    <H1 class="center">St. Jude Play ▶ Live 2022</H1>
+    <div id="charityContainer" class="container">
+
+        <section id="stJudeInfo" class="center">
+            <p class="fundraiserInfo">This year, I will be matching the first $1000 in donations, then my employer will match my donation. What does that mean? The first $1000 will be $3000! All for the kids! F*ck Cancer </p>
+            <a href="https://tiltify.com/@leetinglady/beleet" target="_blank" rel="noreferrer">
+                <img id="stJudeImg" src="../../assets/stjudeplaylivelogo.jpeg" alt="St. Jude Children's Research Hospital logo of the profile of a small child holding their hands in front of them, and St. Jude Play Live logo side by side on a black background.">
+            </a>
+        </section>
+        <hr>
+        <section id="whatIsStJude" class="center">
+            <H2>What is St. Jude Children's Research Hospital?</H2>
+            <p>St. Jude is a hospital near my hometown in Memphis, TN. They treat children with various cancers and never charge families for any of it.</p>
+        </section>
+    </div>
+
+    <div id="incentiveContainer" class="container">
+        <section id="twitchiFrame" class="center">
+            <h2>LeetingLady on Twitch</h2><br>
+            <iframe frame-src="https://player.twitch.tv/?channel=leetinglady&parent=amandajo.tech" height="400" width="600" allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <h2>Donation Incentives</h2>
+            <span id="availableStJudeIncentiveList" class="center">
+                <!-- Available physical incentives -->
+                <ul>*Photos Coming Soon*
+                    <li>Console Case</li>
+                    <li>Hand-knit Dice Bags</li>
+                    <li>Hand-knit Voodoll</li>
+                    <li>Custom Commissions</li>
+                </ul>
+            </span>
+        </section>
+        <hr>
+        <section id="claimedStJudeIncentives" class="center">
+            <h2>Thank you for your donations!</h2><br>
+            <span *ngFor="let clips of highlights">
+                <!-- Highlights from incentive runs (Nightmare mode, etc) -->
+                {{clips.donor}} | {{clips.donationAmount}} | {{clips.claimedReward}}
+            </span>
+        </section>
+    </div>
+
+
+</div>

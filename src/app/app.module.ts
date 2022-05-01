@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ShopComponent } from './shop/shop.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
+import { TwitchComponent } from './twitch/twitch.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
     ResumeComponent,
     NotfoundComponent,
     ShopComponent,
-    RecommendationsComponent
+    RecommendationsComponent,
+    TwitchComponent
   ],
   imports: [
     BrowserModule,
