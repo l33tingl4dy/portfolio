@@ -47,10 +47,31 @@
     margin-bottom: 50px;
 }
 
-#availableStJudeIncentiveList {}
+#availableStJudeIncentiveList {
+    display: block;
+}
 
 #claimedStJudeIncentives {
     display: block;
+}
+
+
+/* container for photos */
+
+#incentivePhotos {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* actual photos  */
+
+.incentivePics {
+    width: 150px;
+    height: 100px;
+    border-radius: 25px;
 }
 
 hr {

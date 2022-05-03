@@ -12,6 +12,18 @@ export interface IDonations {
   styleUrls: ['./twitch.component.css']
 })
 export class TwitchComponent implements OnInit {
+  public donations: IDonations[] =[{
+    donor: "Sionelle",
+    donationAmount: "$25"
+  },
+  {
+    donor: "Yugitoe",
+    donationAmount: "$100",
+    claimedReward: "Phasmo: Nightmare Run",
+    clipLink: "https://www.twitch.tv/videos/1472576562"
+  }
+
+]
   public highlights = [];
   constructor() { }
 
@@ -20,20 +32,7 @@ export class TwitchComponent implements OnInit {
   }
 
   getDonations() {
-    let donations: IDonations
-    [
-      {
-        donor: "Sionelle",
-        donationAmount: "$25"
-      },
-      {
-        donor: "Yugitoe",
-        donationAmount: "$100",
-        claimedReward: "Phasmo: Nightmare Run",
-        clipLink: ""
-      }
-    ]
-    this.highlights.push(donations);
+    this.highlights.push(this.donations);
     console.table(this.highlights);
   }
 
