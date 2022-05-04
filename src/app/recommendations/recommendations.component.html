@@ -1,0 +1,36 @@
+<h1 class="recHeader">Recommendations</h1>
+<div class="recommendation-section">
+    <h2>Books</h2>
+    <h3>Non-Fiction</h3>
+    <div class="recSection">
+        <div *ngFor="let nonfiction of nonFictionBooks, index as i" class="recObject">
+            <span>
+                <a href="{{nonfiction.amazon}}" target="_blank" rel="noreferrer" attr.aria-labelledby="nonfiction-{{i}}"><img src="{{nonfiction.imgLink}}" height=150px;>
+                <span id="nonFiction-{{i}}" class="recData">{{ nonfiction.name }} | {{ nonfiction.author }}</span>
+            </a>
+            </span>
+        </div>
+    </div>
+    <h3>Fiction</h3>
+    <div class="recSection">
+        <div *ngFor="let fiction of fictionBooks, index as i;" class="recObject" id="bookInfo">
+            <span class="recCard">
+                <a href="{{fiction.amazon}}" target="_blank" rel="noreferrer" attr.aria-labelledby="fiction-{{i}}"><img src="{{fiction.imgLink}}" height=150px;>
+                <span id="fiction-{{i}}" class="recData">{{ fiction.name }} | {{ fiction.author }}</span>
+            </a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="recommendation-section">
+    <h2>Games</h2>
+    <div class="recSection">
+        <div *ngFor="let game of games, index as i" class="recObject">
+            <span class="recCard">
+            <a href="{{game.steam}}" target="_blank" rel="noreferrer" attr.aria-labelledby="game-{{i}}"><img src="{{game.img}}" height=100px;>
+                <span id="game-{{i}}" class="recData">{{game.name}}</span>
+            </a>
+            </span>
+        </div>
+    </div>

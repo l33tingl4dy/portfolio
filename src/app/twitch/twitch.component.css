@@ -1,0 +1,81 @@
+#twitchPage {}
+
+#charityContainer {
+    display: block;
+}
+
+#incentiveContainer {
+    display: block;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(243, 234, 234, 0.3);
+    border-radius: 25px;
+    margin: 50px 100px;
+    padding: 30px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#twitchiFrame {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding-right: 50px;
+}
+
+#stJudeImg {
+    height: 200px;
+    margin-left: 50px;
+    border-radius: 4%;
+}
+
+.fundraiserInfo {
+    max-width: 40%;
+}
+
+#whatIsStJude {
+    display: block;
+}
+
+#stJudeInfo {
+    display: flexbox;
+    margin-bottom: 50px;
+}
+
+#availableStJudeIncentiveList {
+    display: block;
+}
+
+#claimedStJudeIncentives {
+    display: block;
+}
+
+
+/* container for photos */
+
+#incentivePhotos {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* actual photos  */
+
+.incentivePics {
+    width: 150px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    border: none;
+}

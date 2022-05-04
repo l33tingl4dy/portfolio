@@ -6,6 +6,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ResumeComponent } from './resume/resume.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ShopComponent } from './shop/shop.component';
+import { RecommendationsComponent } from './recommendations/recommendations.component';
+import { TwitchComponent } from './twitch/twitch.component';
 
 
 const routes: Routes = [
@@ -14,7 +16,9 @@ const routes: Routes = [
   { path: 'cv', component: ResumeComponent},
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
-  {path: 'shop', component: ShopComponent},
+  { path: 'shop', component: ShopComponent},
+  { path: 'recommendations', component: RecommendationsComponent},
+  { path: 'twitch', component: TwitchComponent},
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '404'}
 ];

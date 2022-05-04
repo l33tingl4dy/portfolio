@@ -1,0 +1,62 @@
+<div id="twitchPage">
+    <H1 class="center">St. Jude Play ▶ Live 2022</H1>
+    <div id="charityContainer" class="container">
+
+        <section id="stJudeInfo" class="center">
+            <p class="fundraiserInfo">This year, I will be matching the first $1000 in donations, then my employer will match my donation. What does that mean? The first $1000 will be $3000! All for the kids! F*ck Cancer </p>
+            <a href="https://tiltify.com/@leetinglady/beleet" target="_blank" rel="noreferrer">
+                <img id="stJudeImg" src="../../assets/stjudeplaylivelogo.jpeg" alt="St. Jude Children's Research Hospital logo of the profile of a small child holding their hands in front of them, and St. Jude Play Live logo side by side on a black background.">
+            </a>
+        </section>
+        <hr>
+        <section id="whatIsStJude" class="center">
+            <H2>What is St. Jude Children's Research Hospital?</H2>
+            <p>St. Jude is a hospital near my hometown in Memphis, TN. They treat children with various cancers and never charge families for any of it.</p>
+        </section>
+    </div>
+
+    <div id="incentiveContainer" class="container">
+        <section id="twitchiFrame" class="center">
+            <h2>LeetingLady on Twitch</h2><br>
+            <iframe frame-src="https://player.twitch.tv/?channel=leetinglady&parent=amandajo.tech" height="400" width="600" allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <h2>Donation Incentives</h2>
+            <span id="availableStJudeIncentiveList" class="center">
+                <section id="incentivePhotos">   
+                    <img src="../../assets/incentives/blackred.jpg" alt="a black hand knit dice bag with red scales and a set of matching dice" class="incentivePics">
+                    <img src="../../assets/incentives/blackyellow.jpg" alt="a yellow hand knit dice bag with black scales and a set of yellow dice" class="incentivePics">
+                    <img src="../../assets/incentives/copperblack.jpg" alt="a charcoal hand knit dice bag with copper scales and a set of charcoal and copper dice" class="incentivePics">
+                    <img src="../../assets/incentives/coppercream.jpg" alt="a cream hand knit dice bag with copper scales and a set of matching dice" class="incentivePics">
+                    <img src="../../assets/incentives/coppersteel.jpg" alt="a copper hand knit dice bag with steel scales and a set of dice" class="incentivePics">
+                    <img src="../../assets/incentives/greenchampagne.jpg" alt="a green hand knit dice bag with champagne scales and a set of dice" class="incentivePics">
+                    <img src="../../assets/incentives/purpleblue.jpg" alt="a fushia hand knit dice bag with blue scales and a set of dice" class="incentivePics">
+                </section>
+                <br>
+                <!-- Available physical incentives -->
+                
+                <ul>
+                    *More Photos Coming Soon*
+                    <li>Console Case</li>
+                    <li>Hand-knit Dice Bags</li>
+                    <li>Hand-knit Voodoll</li>
+                    <li>Custom Commissions</li>
+                    <li>Pokemon Prize Pack</li>
+                </ul>
+            </span>
+        </section>
+        <hr>
+        <section id="claimedStJudeIncentives" class="center">
+            <h2>Thank you for your donations!</h2><br>
+            <span *ngFor="let clips of donations">
+                <!-- Highlights from incentive runs (Nightmare mode, etc) -->
+                {{clips.donor}} | {{clips.donationAmount}}  {{clips.claimedReward}}
+                <br>
+            </span>
+            <iframe src="https://player.twitch.tv/?video=1472576562&parent=www.amandajo.tech" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+        </section>
+    </div>
+
+
+</div>

@@ -11,6 +11,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ShopComponent } from './shop/shop.component';
+import { RecommendationsComponent } from './recommendations/recommendations.component';
+import { TwitchComponent } from './twitch/twitch.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ShopComponent } from './shop/shop.component';
     HomeComponent,
     ResumeComponent,
     NotfoundComponent,
-    ShopComponent
+    ShopComponent,
+    RecommendationsComponent,
+    TwitchComponent
   ],
   imports: [
     BrowserModule,
