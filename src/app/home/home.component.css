@@ -39,7 +39,9 @@
 }
 
 #home-photo {
-    border-radius: 25px;
+    border-radius: 50%;
+    height: 225px;
+    width: 225px;
 }
 
 a {
