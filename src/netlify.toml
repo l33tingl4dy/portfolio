@@ -1,0 +1,3 @@
+[[redirects]]
+/twitch  https://www.amandajo.tech/twitch
+/en/* /en/notfound.component.html 404
