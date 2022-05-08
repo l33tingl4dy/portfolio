@@ -3,7 +3,10 @@
     <div id="charityContainer" class="container">
 
         <section id="stJudeInfo" class="center">
-            <p class="fundraiserInfo">This year, I will be matching the first $1000 in donations, then my employer will match my donation. What does that mean? The first $1000 will be $3000! All for the kids! F*ck Cancer </p>
+
+            <p class="fundraiserInfo">This year, I will be matching the first $1000 in donations, then my employer will match my donation. What does that mean? The first $1000 will be $3000! All for the kids and families of St. Jude Children's Research Hospital <br><strong>You can find my fundraising campaign
+                <a href="https://tiltify.com/@leetinglady/beleet" target="_blank" rel="noreferrer">here</a></strong>
+            </p>
             <a href="https://tiltify.com/@leetinglady/beleet" target="_blank" rel="noreferrer">
                 <img id="stJudeImg" src="../../assets/stjudeplaylivelogo.jpeg" alt="St. Jude Children's Research Hospital logo of the profile of a small child holding their hands in front of them, and St. Jude Play Live logo side by side on a black background.">
             </a>
@@ -16,15 +19,25 @@
                 worry about is helping their child live.
                 <cite><a href="https://www.stjude.org/get-involved/other-ways/video-game-charity-event/faq.html">St. Jude FAQ</a></cite>
             </p>
-
+            <h3>What do donations pay for?</h3>
+            <ul>
+                <li>$10 can provide a new toy for hospital play areas</li>
+                <li>$25 can provide a No More Chemo Party for St. Jude patients and their families, or it can provide rehabilitation weights for a patient</li>
+                <li>$50 can provide art supplies to St. Jude patients</li>
+                <li>$100 can provide red wagons to paitents: the preferred mode of transportation for younger patients. $100 could also provide a pair of pediatric crutches</li>
+                <li>$250 can provide a meal card for a St. Jude Family for one week</li>
+                <li>$500 can provide a share of bone marrow treatment</li>
+                <li>$1000 can cover 2/3 of the cost of one day of chemotherapy</li>
+                <li>Also, masks, gowns, and other supplies that are needed daily!</li>
+                <cite><a href="https://www.stjude.org/about-st-jude/how-does-st-jude-use-donations.html">St. Jude</a></cite>
+            </ul>
         </section>
     </div>
 
     <div id="incentiveContainer" class="container">
-        <section id="twitchiFrame" class="center">
-            <h2>LeetingLady on Twitch</h2><br>
-            <iframe frame-src="https://player.twitch.tv/?channel=leetinglady&parent=amandajo.tech" height="400" width="600" allowfullscreen>
-            </iframe>
+        <section id="twitch" class="center">
+            <h2>LeetingLady on Twitch</h2>
+            <a href="https://www.twitch.tv/leetinglady" target="_blank" rel="noreferrer" class="social-link" aria-label="Link to Amanda's Twitch" id="twitch-link"><i class="fab fa-brands fa-twitch"></i> LeetingLady</a>
         </section>
         <section>
             <h2>Donation Incentives</h2>
@@ -40,26 +53,35 @@
                 </section>
                 <br>
                 <!-- Available physical incentives -->
-                
-                <ul>
-                    *More Photos Coming Soon*
-                    <li>Console Case</li>
-                    <li>Hand-knit Dice Bags</li>
-                    <li>Hand-knit Voodoll</li>
-                    <li>Custom Commissions</li>
-                    <li>Pokemon Prize Pack</li>
-                </ul>
+                <section class="physicalRewardList">
+
+                    <ul>
+                        <li>Console Case</li>
+                        <li>Hand-knit Dice Bags</li>
+                        <li>Hand-knit Voodoo Dolls</li>
+                        <li>Custom Commissions</li>
+                        <li>Pokemon Prize Pack</li>
+                        <li>In game requests on Stream</li>
+                    </ul>
+                    <ul>
+                        <p>Giveaways at  Milestones!</p>
+                        <li>$100: Cute Voodoo Doll</li>
+                        <li>$300: Realistic Voodoo Doll</li>
+                        <li>$500: Console Case (Fits Nintendo Switch/Lite)</li>
+                        <li>More to be announced</li>
+                    </ul>
+                </section>
             </span>
         </section>
         <hr>
         <section id="claimedStJudeIncentives" class="center">
             <h2>Thank you for your donations!</h2><br>
-            <span *ngFor="let clips of donations">
-                <!-- Highlights from incentive runs (Nightmare mode, etc) -->
-                {{clips.donor}} | {{clips.donationAmount}}  {{clips.claimedReward}}
-                <br>
-            </span>
-            <iframe src="https://player.twitch.tv/?video=1472576562&parent=amandajo.tech" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+            <ul>
+                <li *ngFor="let clips of donations" class="thanks">
+                    {{clips.donor}} | {{clips.donationAmount}} <a [href]="clips.clipLink">{{clips.claimedReward}}</a>
+                </li>
+            </ul>
+
         </section>
     </div>
 

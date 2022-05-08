@@ -21,6 +21,18 @@ export class TwitchComponent implements OnInit {
     donationAmount: "$100",
     claimedReward: "Phasmo: Nightmare Run",
     clipLink: "https://www.twitch.tv/videos/1472576562"
+  },
+  {
+    donor: "Not l33ting lady (Kruxy)",
+    donationAmount: "$20"
+  },
+  {
+    donor: "Lila",
+    donationAmount: "$20"
+  },
+  {
+    donor: "HuntersFeet (Bumble)",
+    donationAmount: "$20"
   }
 
 ]
@@ -33,8 +45,6 @@ export class TwitchComponent implements OnInit {
 
   getDonations() {
     this.highlights.push(this.donations);
-    console.table(this.highlights);
   }
-
 
 }

@@ -21,7 +21,7 @@
     justify-content: center;
 }
 
-#twitchiFrame {
+#twitch {
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -35,7 +35,9 @@
 }
 
 .fundraiserInfo {
+    font-size: larger;
     max-width: 40%;
+    padding-top: 40px;
 }
 
 #whatIsStJude {
@@ -45,6 +47,8 @@
 #stJudeInfo {
     display: flexbox;
     margin-bottom: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #availableStJudeIncentiveList {
@@ -55,6 +59,12 @@
     display: block;
 }
 
+.physicalRewardList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 
 /* container for photos */
 
@@ -63,6 +73,7 @@
     justify-content: space-evenly;
     padding-top: 10px;
     padding-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 
