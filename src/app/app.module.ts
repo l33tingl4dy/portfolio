@@ -9,7 +9,6 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NotfoundComponent } from './notfound/notfound.component';
 import { ShopComponent } from './shop/shop.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { TwitchComponent } from './twitch/twitch.component';
@@ -23,7 +22,6 @@ import { TwitchComponent } from './twitch/twitch.component';
     AboutPageComponent,
     HomeComponent,
     ResumeComponent,
-    NotfoundComponent,
     ShopComponent,
     RecommendationsComponent,
     TwitchComponent
