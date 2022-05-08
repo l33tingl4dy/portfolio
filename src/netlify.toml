@@ -1,7 +1,12 @@
 [[redirects]]
 from = "/*"
-to = "/notfound.component.html
+to = "404.html"
 status = 404
+
+[[redirects]]   
+from = "/*"   
+to = "/index.html"   
+status = 200
 
 #[[headers]]
  #   Content-Security-Policy: frame-ancestors self

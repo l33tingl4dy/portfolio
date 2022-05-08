@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ResumeComponent } from './resume/resume.component';
-import { NotfoundComponent } from './notfound/notfound.component';
+
 import { ShopComponent } from './shop/shop.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { TwitchComponent } from './twitch/twitch.component';
@@ -19,8 +19,7 @@ const routes: Routes = [
   { path: 'shop', component: ShopComponent},
   { path: 'recommendations', component: RecommendationsComponent},
   { path: 'twitch', component: TwitchComponent},
-  { path: '404', component: NotfoundComponent },
-  { path: '**', redirectTo: '404'}
+
 ];
 
 @NgModule({

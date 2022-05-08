@@ -1,3 +1,0 @@
-/*    /index.html  200
-/en/* /en/notfound.component.html 404
-/de/* /de/notfound.component.html 404
