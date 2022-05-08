@@ -1,3 +1,7 @@
 [[redirects]]
-/twitch  https://www.amandajo.tech/twitch
-/en/* /en/notfound.component.html 404
+from = "/*"
+to = "/notfound.component.html
+status = 404
+
+#[[headers]]
+ #   Content-Security-Policy: frame-ancestors self
