@@ -61,7 +61,7 @@
 
 .physicalRewardList {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -89,4 +89,72 @@ hr {
     background-color: black;
     height: 2px;
     border: none;
+}
+
+
+/* spiritbox  */
+
+#spiritBoxBody {
+    width: 300px;
+    height: 500px;
+    background: #212121;
+    border-radius: 10px;
+}
+
+#silverPlate {
+    width: 250px;
+    height: 250px;
+    background: #B0BEC5;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#display {
+    width: 200px;
+    height: 100px;
+    background: #FF3D00;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #212121;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 22.5px;
+    margin-top: 22.5px;
+}
+
+.buttons {
+    width: 210px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 30px;
+    height: 15px;
+    background: #212121;
+    border-radius: 10px;
+}
+
+#buttonsGroupTwo {
+    margin-top: 200px;
+}
+
+.incentiveList {
+    color: white;
+    position: relative;
+    padding-top: 260px;
+    padding-left: 10px;
+    font-family: 'Goldman', cursive;
+    font-size: 20px;
+}
+
+.display {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    padding: 20px 0 0 10px;
 }
