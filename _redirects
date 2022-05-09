@@ -1,1 +1,8 @@
-/*    /index.html   200
+/*  /index.html 200
+/twitch /app/twitch 301
+/about  /app/about 301
+/contact    /app/contact 301
+/cv /app/resume 301
+/recommendations /app/recommendations 301
+/*  /404.html 404
+
