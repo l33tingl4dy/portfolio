@@ -1,27 +1,27 @@
 [[redirects]]
 from = "/about"
-to = "/app/about"
+to = "/about"
 status = 301
 
 [[redirects]]
 from = "/cv"
-to = "/app/resume"
-status = 200
+to = "/resume"
+status = 301
 
 [[redirects]]
 from = "/twitch"
-to = "/app/twitch"
-status = 200
+to = "/twitch"
+status = 301
 
 [[redirects]]
 from = "/recommendations"
-to = "/app/recommendations"
-status = 200
+to = "/recommendations"
+status = 301
 
 [[redirects]]
 from = "/contact"
-to = "/app/contact"
-status = 200
+to = "/contact"
+status = 301
 
 [[redirects]]
 from = "/*"
