@@ -1,7 +1,7 @@
 [[redirects]]
 from = "/about"
 to = "/app/about"
-status = 200
+status = 301
 
 [[redirects]]
 from = "/cv"
