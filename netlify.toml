@@ -1,29 +1,4 @@
 [[redirects]]
-from = "/about"
-to = "/about"
-status = 301
-
-[[redirects]]
-from = "/cv"
-to = "/resume"
-status = 301
-
-[[redirects]]
-from = "/twitch"
-to = "/twitch"
-status = 301
-
-[[redirects]]
-from = "/recommendations"
-to = "/recommendations"
-status = 301
-
-[[redirects]]
-from = "/contact"
-to = "/contact"
-status = 301
-
-[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
