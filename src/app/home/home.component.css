@@ -8,12 +8,17 @@
 }
 
 .social-media-container {
-    margin: 20px;
+    margin: 15px;
 }
 
 .social-link {
     font-size: 45px;
     padding: 10px;
+}
+
+#ko-fi-logo {
+    max-height: 45px;
+    padding-top: 30px;
 }
 
 .introduction-container {
