@@ -17,6 +17,7 @@ export class ContactPageComponent implements OnInit {
   contactForm: FormGroup;
   public isSubmitted = false;
   public contactFormShown = true;
+
   ngOnInit(): void {
     this.contactForm = this.builder.group({
       name: new FormControl(this.contactObject.name, [Validators.required]),
@@ -37,7 +38,7 @@ export class ContactPageComponent implements OnInit {
     if (this.contactForm.valid) {
       this.contactFormShown = false;
       e.preventDefault();
-      emailjs.sendForm('service_8rp4gb8', 'template_0gq4c4r', e.target as HTMLFormElement, 'user_IdUf5NOW1pW3PPrnobeLF')
+      emailjs.sendForm('service_sw7jy75', 'template_zo2tu6m', e.target as HTMLFormElement, 'user_IdUf5NOW1pW3PPrnobeLF')
         .then((result: EmailJSResponseStatus) => {
           console.log(result.status, result.text);
         }, (error) => {

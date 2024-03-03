@@ -10,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShopComponent } from './shop/shop.component';
-import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { TwitchComponent } from './twitch/twitch.component';
 
 
@@ -23,7 +22,6 @@ import { TwitchComponent } from './twitch/twitch.component';
     HomeComponent,
     ResumeComponent,
     ShopComponent,
-    RecommendationsComponent,
     TwitchComponent
   ],
   imports: [
