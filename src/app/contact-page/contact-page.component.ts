@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
@@ -9,20 +9,20 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 })
 export class ContactPageComponent implements OnInit {
 
-  FormData: FormGroup;
+  FormData: UntypedFormGroup;
   constructor(
-    private builder: FormBuilder,
+    private builder: UntypedFormBuilder,
   ) { }
   contactObject = { name: '', email: '', message: '' };
-  contactForm: FormGroup;
+  contactForm: UntypedFormGroup;
   public isSubmitted = false;
   public contactFormShown = true;
 
   ngOnInit(): void {
     this.contactForm = this.builder.group({
-      name: new FormControl(this.contactObject.name, [Validators.required]),
-      email: new FormControl(this.contactObject.email, [Validators.required]),
-      message: new FormControl(this.contactObject.message, [
+      name: new UntypedFormControl(this.contactObject.name, [Validators.required]),
+      email: new UntypedFormControl(this.contactObject.email, [Validators.required]),
+      message: new UntypedFormControl(this.contactObject.message, [
         Validators.required,
         Validators.minLength(10)
       ])

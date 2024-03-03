@@ -121,7 +121,6 @@
             }
         }
     },
-    "defaultProject": "ajh-portfolio",
     "cli": {
         "analytics": "5bfa78e2-b3ce-4d6c-b9bd-f70f573bd30f"
     }
