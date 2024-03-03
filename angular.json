@@ -60,18 +60,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "ajh-portfolio:build"
+                      "buildTarget": "ajh-portfolio:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "ajh-portfolio:build:production"
+                          "buildTarget": "ajh-portfolio:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "ajh-portfolio:build"
+                      "buildTarget": "ajh-portfolio:build"
                     }
                 },
                 "test": {
