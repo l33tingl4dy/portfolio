@@ -6,19 +6,17 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ResumeComponent } from './resume/resume.component';
 
 import { ShopComponent } from './shop/shop.component';
-import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { TwitchComponent } from './twitch/twitch.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'cv', component: ResumeComponent},
+  { path: 'cv', component: ResumeComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
-  { path: 'shop', component: ShopComponent},
-  { path: 'recommendations', component: RecommendationsComponent},
-  { path: 'twitch', component: TwitchComponent},
+  { path: 'shop', component: ShopComponent },
+  { path: 'twitch', component: TwitchComponent },
 
 ];
 

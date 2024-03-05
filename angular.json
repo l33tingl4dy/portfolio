@@ -13,7 +13,6 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-
                         "outputPath": "dist/ajh-portfolio",
                         "index": "src/index.html",
                         "main": "src/main.ts",
@@ -31,19 +30,21 @@
                     },
                     "configurations": {
                         "production": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.prod.ts"
+                                }
+                            ],
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "extractLicenses": true,
                             "vendorChunk": false,
                             "buildOptimizer": true,
-                            "budgets": [{
+                            "budgets": [
+                                {
                                     "type": "initial",
                                     "maximumWarning": "2mb",
                                     "maximumError": "5mb"
@@ -60,18 +61,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "ajh-portfolio:build"
+                        "buildTarget": "ajh-portfolio:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "ajh-portfolio:build:production"
+                            "buildTarget": "ajh-portfolio:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "ajh-portfolio:build"
+                        "buildTarget": "ajh-portfolio:build"
                     }
                 },
                 "test": {
@@ -92,17 +93,12 @@
                     }
                 },
                 "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
+                    "builder": "@angular-eslint/builder:lint",
                     "options": {
-                        "tsConfig": [
-                            "tsconfig.app.json",
-                            "tsconfig.spec.json",
-                            "e2e/tsconfig.json"
-                        ],
-                        "exclude": [
-                            "**/node_modules/**",
-                            "**/main.ts",
-                            "**/polyfills.ts"
+                        "eslintConfig": ".eslintrc.json",
+                        "lintFilePatterns": [
+                            "**/*.spec.ts",
+                            "**/*.d.ts"
                         ]
                     }
                 },
@@ -121,7 +117,6 @@
             }
         }
     },
-    "defaultProject": "ajh-portfolio",
     "cli": {
         "analytics": "5bfa78e2-b3ce-4d6c-b9bd-f70f573bd30f"
     }
