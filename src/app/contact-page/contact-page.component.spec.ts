@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ContactPageComponent } from './contact-page.component';
@@ -7,7 +7,7 @@ describe('ContactPageComponent', () => {
   let component: ContactPageComponent;
   let fixture: ComponentFixture<ContactPageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
         ReactiveFormsModule,
@@ -35,14 +35,14 @@ describe('ContactPageComponent', () => {
     component.name.setValue('');
     component.email.setValue('');
     component.message.setValue('');
-    expect(component.contactForm.valid).toBeFalse();
+    expect(component.contactForm.valid).toBeFalsy();
   });
 
   it('should send email if fields are valid', () => {
     component.name.setValue('Leia Organa');
     component.email.setValue('princess.general@alderaan.com');
     component.message.setValue("You're my only hope");
-    expect(component.contactForm.valid).toBeTrue();
+    expect(component.contactForm.valid).toBeTruthy();
   });
 
 });

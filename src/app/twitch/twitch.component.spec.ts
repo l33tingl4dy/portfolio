@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TwitchComponent } from './twitch.component';
 
@@ -6,11 +6,11 @@ describe('TwitchComponent', () => {
   let component: TwitchComponent;
   let fixture: ComponentFixture<TwitchComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ TwitchComponent ]
+      declarations: [TwitchComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
