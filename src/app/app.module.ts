@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -13,26 +13,20 @@ import { ShopComponent } from './shop/shop.component';
 import { TwitchComponent } from './twitch/twitch.component';
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    NavigationComponent,
-    ContactPageComponent,
-    AboutPageComponent,
-    HomeComponent,
-    ResumeComponent,
-    ShopComponent,
-    TwitchComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
-  providers: [
-  ],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        NavigationComponent,
+        ContactPageComponent,
+        AboutPageComponent,
+        HomeComponent,
+        ResumeComponent,
+        ShopComponent,
+        TwitchComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule], providers: [
+        provideHttpClient(withInterceptorsFromDi())
+    ] })
 export class AppModule { }
