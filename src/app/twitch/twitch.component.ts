@@ -7,9 +7,10 @@ export interface IDonations {
   clipLink?: string;
 }
 @Component({
-  selector: 'app-twitch',
-  templateUrl: './twitch.component.html',
-  styleUrls: ['./twitch.component.css']
+    selector: 'app-twitch',
+    templateUrl: './twitch.component.html',
+    styleUrls: ['./twitch.component.css'],
+    standalone: false
 })
 export class TwitchComponent implements OnInit {
   public donations: IDonations[] =[{
