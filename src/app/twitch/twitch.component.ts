@@ -1,3 +1,4 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 export interface IDonations {
@@ -12,6 +13,7 @@ export interface IDonations {
   standalone: false
 })
 export class TwitchComponent implements OnInit {
+  currencyPipe = CurrencyPipe;
   public donations: IDonations[] = [{
     year: "2025",
     amount: "2414.99"

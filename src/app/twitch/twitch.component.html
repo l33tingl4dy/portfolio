@@ -1,24 +1,34 @@
 <div id="twitchPage">
     <div id="twitchContainer" class="container">
         <h2 class="center">Streaming</h2>
-        <p>I stream on Twitch occasionally to fundraise. I participate in St. Jude Play▶Live every May. During this
-            time, I match donations up to $1,000. My employer matches my donations up to $1,000 annually.</p>
+        <p>I love playing video games and I get to put this to use to raise money by streaming on Twitch. I participate
+            in St. Jude Play▶Live every May. During this
+            time, I match donations up to $1,000. My employer matches my donations up to $1,000 annually. My daughter
+            enjoys getting involved as well.</p>
         <section id="past-fundraising">
             <div *ngFor="let dono of donations; let i = index">
-                {{dono.year}} {{dono.amount}}
+                <span class="fundyear">{{dono.year}} </span> <span class="raised"> {{dono.amount | currency:
+                    'USD'}}</span>
             </div>
         </section>
-        <h2 class="center">LeetingLady on Twitch</h2>
         <section id="twitch" class="center">
             <a href="https://www.twitch.tv/leetinglady" target="_blank" rel="noreferrer" class="social-link"
                 aria-label="Link to Amanda's Twitch" id="twitch-link"><i class="fab fa-brands fa-twitch"></i>
                 LeetingLady</a>
+            <a href="https://tiltify.com/@leetinglady/profile" target="_blank" rel="noreferrer" class="social-link"
+                aria-label="Amanda's Fundraising Page">
+                Tiltify
+            </a>
         </section>
+        <!-- <iframe
+            src="https://clips.twitch.tv/embed?clip=LaconicOutstandingClintmullinsUnSane-fqigfioJoLnH8Kyk&parent=www.amandajo.tech"
+            frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe> -->
     </div>
-    <H1 class="center">St. Jude Play ▶ Live </H1>
+
     <div id="charityContainer" class="container">
         <section id="stJudeInfo" class="center">
-            <a href="https://tiltify.com/@leetinglady/profile" target="_blank" rel="noreferrer">
+            <a href="https://www.stjude.org/get-involved/other-ways/video-game-charity-event.html" target="_blank"
+                rel="noreferrer">
                 <img id="stJudeImg" src="../../assets/stjudeplaylivelogo.jpeg"
                     alt="St. Jude Children's Research Hospital logo of the profile of a small child holding their hands in front of them, and St. Jude Play Live logo side by side on a black background.">
             </a>
