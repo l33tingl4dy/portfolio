@@ -41,6 +41,22 @@
     margin: 20px;
     max-width: 400px;
     padding-right: 150px;
+    align-items: center;
+}
+.quote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+#tron-quote{
+   font-size: 25px;
+   padding-right: 150px;
+}
+#tron-cite{
+   font-size: 15px;
+   padding-left: 150px;
 }
 
 #home-photo {

@@ -21,14 +21,12 @@
 
 #twitch {
     display: flex;
-    justify-content: center;
-    flex-flow: column;
+    justify-content: space-evenly;
     padding-right: 50px;
 }
 
 #stJudeImg {
     height: 200px;
-    margin-left: 50px;
     border-radius: 4%;
 }
 
@@ -49,38 +47,8 @@
     flex-wrap: wrap;
 }
 
-#availableStJudeIncentiveList {
-    display: block;
-}
-
-#claimedStJudeIncentives {
-    display: block;
-}
-
-.physicalRewardList {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-
-/* container for photos */
-
-#incentivePhotos {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    flex-wrap: wrap;
-}
-
-
-/* actual photos  */
-
-.incentivePics {
-    width: 150px;
-    height: 100px;
-    border-radius: 25px;
+.stjude{
+    color: #d11947;
 }
 
 hr {
@@ -88,71 +56,12 @@ hr {
     height: 2px;
     border: none;
 }
-
-
-/* spiritbox  */
-
-#spiritBoxBody {
-    width: 300px;
-    height: 500px;
-    background: #212121;
-    border-radius: 10px;
-}
-
-#silverPlate {
-    width: 250px;
-    height: 250px;
-    background: #B0BEC5;
-    border-radius: 15px;
-    position: absolute;
-    margin-left: 25px;
-    margin-top: 25px;
-}
-
-#display {
-    width: 200px;
-    height: 100px;
-    background: #FF3D00;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #212121;
-    border-radius: 5px;
-    position: absolute;
-    margin-left: 22.5px;
-    margin-top: 22.5px;
-}
-
-.buttons {
-    width: 210px;
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 20px;
+#past-fundraising{
     display: flex;
-    justify-content: space-between;
-}
+   flex-direction: column;
 
-.button {
-    width: 30px;
-    height: 15px;
-    background: #212121;
-    border-radius: 10px;
+   align-content:space-between;
 }
-
-#buttonsGroupTwo {
-    margin-top: 200px;
-}
-
-.incentiveList {
-    color: white;
-    position: relative;
-    padding-top: 260px;
-    padding-left: 10px;
-    font-family: 'Goldman', cursive;
-    font-size: 20px;
-}
-
-.display {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 22px;
-    padding: 20px 0 0 10px;
+.fundyear{
+    margin-right: 20px;
 }

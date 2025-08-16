@@ -22,4 +22,7 @@ describe('TwitchComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  // TODO: write test for formatting donation amounts 
+
+  //TODO: write test for total calculation
 });
