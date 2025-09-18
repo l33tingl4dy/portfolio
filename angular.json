@@ -14,7 +14,7 @@
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
                         "outputPath": {
-                            "base": "dist/defi/browser/browser"
+                            "base": "dist/ajh-portfolio"
                         },
                         "index": "src/index.html",
                         "polyfills": [
