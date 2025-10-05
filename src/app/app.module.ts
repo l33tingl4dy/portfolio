@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -27,6 +27,7 @@ import { TwitchComponent } from './twitch/twitch.component';
         AppRoutingModule,
         FormsModule,
         ReactiveFormsModule], providers: [
-        provideHttpClient(withInterceptorsFromDi())
+        provideHttpClient(withInterceptorsFromDi()),
+        provideClientHydration(withEventReplay())
     ] })
 export class AppModule { }
