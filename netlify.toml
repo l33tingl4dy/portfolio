@@ -1,7 +1,0 @@
-[build]
-command = "ng build"
-functions = "netlify/functions"
-publish = "dist/ajh-portfolio/browser"
-
-[[plugins]]
-  package="@netlify/angular-runtime"

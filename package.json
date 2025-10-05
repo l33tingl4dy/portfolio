@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ngx eslint",
-    "e2e": "ng e2e",
-    "serve:ssr:ajh-portfolio": "node dist/ajh-portfolio/server/server.mjs"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +20,6 @@
     "@angular/platform-browser-dynamic": "^20.3.3",
     "@angular/platform-server": "^20.3.3",
     "@angular/router": "^20.3.3",
-    "@angular/ssr": "^20.3.4",
     "@emailjs/browser": "^4.3.1",
     "@sendgrid/mail": "^8.1.1",
     "emailjs": "^3.3.0",
