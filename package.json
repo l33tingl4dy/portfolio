@@ -24,6 +24,7 @@
     "@sendgrid/mail": "^8.1.1",
     "emailjs": "^3.3.0",
     "express": "^5.1.0",
+    "netlify-plugin-a11y": "^0.0.12",
     "rxjs": "~6.5.4",
     "terser": "^5.3.5",
     "tslib": "^2.0.0",
